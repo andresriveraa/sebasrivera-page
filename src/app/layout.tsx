@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Montserrat, Raleway } from "next/font/google";
+import "./globals.scss";
 import { Suspense } from "react";
-import Analytics from "@components/Analytics/Analytics";
+import Analytics from "@components/global/Analytics/Analytics";
 
-const inter = Inter({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ['latin'] });
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,11 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}
-      <Suspense>
-        <Analytics />
-      </Suspense></body>
+    <html lang='en'>
+      <body className={`${raleway.className} ${montserrat.className}`}>
+        {children}
+        <Suspense>
+          <Analytics />
+        </Suspense>
+      </body>
     </html>
   );
 }
