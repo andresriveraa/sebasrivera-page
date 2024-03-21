@@ -22,9 +22,9 @@ export default function Home() {
               x2='1920'
               gradientUnits='userSpaceOnUse'
             >
-              <stop offset='0%' stop-color='#455482' />
-              <stop offset='30%' stop-color='#f4dcf5' />
-              <stop offset='100%' stop-color='#455482' />
+              <stop offset='0%' stopColor='#455482' />
+              <stop offset='30%' stopColor='#f4dcf5' />
+              <stop offset='100%' stopColor='#455482' />
               <animate
                 attributeName='x1'
                 values='-1020; 0; 1020'
