@@ -1,5 +1,5 @@
 import Menu from '@components/menu/Menu';
-import styles from './experiments.module.css';
+import styles from './Experiments.module.css';
 
 const Page = () => {
   return (
