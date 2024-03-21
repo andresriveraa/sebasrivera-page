@@ -1,0 +1,39 @@
+@keyframes moveBackground {
+  from {
+    background-position: -150%;
+  }
+  to {
+    background-position: 150%;
+  }
+}
+
+.blog {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .blog__text {
+    font-variation-settings: 'wdth' 100, 'wght' 600, 'ital' 0;
+    font-size: 32px;
+    color: transparent;
+    background: linear-gradient(90deg,#525d7e, #f4dcf5, #455482);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: moveBackground;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  .blog {
+    .blog__text {
+      font-size: 40px;
+    }
+  }
+}
