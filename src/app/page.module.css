@@ -6,26 +6,8 @@
 
   .main__menu {
     position: absolute;
-    right: -4px;
-    top: 40px;
-    transform: rotate(90deg);
-    transform-origin: center;
-
-    .menu__list {
-      .list__item {
-        font-size: 20px;
-        padding: 4px 16px 4px 0;
-        border-radius: 0 8px 8px 0;
-        cursor: pointer;
-        font-family: 'loew-variable', sans-serif;
-        font-variation-settings: 'wdth' 100, 'wght' 200, 'ital' 0;
-      }
-
-      .list__item:hover {
-        background-color: var(--gray-200);
-        color: white;
-      }
-    }
+    right: -32px;
+    top: 68px;
   }
 
   .main__gradient {
@@ -63,7 +45,6 @@
       display: block;
       font-family: 'loew-variable', sans-serif;
       font-variation-settings: 'wdth' 100, 'wght' 200, 'ital' 0;
-    
     }
   }
 
@@ -83,8 +64,8 @@
 @media screen and (min-width: 420px) {
   .main {
     .main__menu {
-      top: 48px;
-      right: 16px;
+      top: 76px;
+      right: -14px;
 
       .menu__list {
         .list__item {

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import Menu from '@components/menu/Menu';
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
               />
               <animate
                 attributeName='x2'
-                values='-960; 960; 1920'
+                values='-960; 3000'
                 dur='10s'
                 repeatCount='indefinite'
               />
@@ -46,14 +47,6 @@ export default function Home() {
           />
         </svg>
       </div>
-
-      <nav className={styles['main__menu']}>
-        <ul className={styles['menu__list']}>
-          <li className={styles['list__item']}>
-            <Link href='/blog'>Blog</Link>
-          </li>
-        </ul>
-      </nav>
 
       <h1 className={styles['main__title']}>Sebas Rivera</h1>
 

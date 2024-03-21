@@ -3,6 +3,7 @@ import "./globals.css";
 import "./fonts.css";
 import { Suspense } from "react";
 import Analytics from "@components/Analytics/Analytics";
+import Menu from "@components/menu/Menu";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,12 +15,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
-    <html lang="en">
-      <body>{children}
-      <Suspense>
-        <Analytics />
-      </Suspense></body>
+    <html lang='en'>
+      <body>
+        {children}
+        <Menu />
+        <Suspense>
+          <Analytics />
+        </Suspense>
+      </body>
     </html>
   );
 }
