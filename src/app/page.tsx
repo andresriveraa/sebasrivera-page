@@ -1,6 +1,13 @@
 import Link from 'next/link';
 import styles from './page.module.css';
 import Menu from '@components/menu/Menu';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Sebas Rivera | Ui Engineer',
+  description:
+    'Hola, soy Ui Engineer viviendo en Bogotá, Colombia. La curiosidad me ha impulsado constantemente a explorar nuevas tecnologías y medios para la creación de experiencias digitales únicas.',
+};
 
 export default function Home() {
   return (
