@@ -1,14 +1,12 @@
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 import styles from './Menu.module.css';
-
+import SoundEffect from '@components/soundEffect/SoundEffect';
 
 const Menu = ({
   className,
-  isHome,
 }: {
   className?: string;
-  isHome?: boolean;
 }) => {
   return (
     <nav className={`${styles['menu']} ${className}`}>
@@ -19,17 +17,13 @@ const Menu = ({
           </Link>
         </li>
         <li className={styles['list__item']}>
+            <SoundEffect className={styles['anchord__button']} />
+        </li>
+        <li className={styles['list__item']}>
           <Link className={styles['item__anchord']} href='/blog'>
             Blog
           </Link>
         </li>
-        {!isHome && (
-          <li className={styles['list__item']}>
-            <Link className={styles['item__anchord']} href='/'>
-              Inicio
-            </Link>
-          </li>
-        )}
       </ul>
     </nav>
   );

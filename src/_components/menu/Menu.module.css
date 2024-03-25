@@ -13,10 +13,23 @@
       border-radius: 0 8px 8px 0;
       cursor: pointer;
       font-family: 'loew-variable', sans-serif;
-      font-variation-settings: 'wdth' 100, 'wght' 200, 'ital' 0;
+      
+      .anchord__button {
+        font-size: 20px;
+        color: var(--purple-500);
+        font-family: 'loew-variable', sans-serif;
+        font-variation-settings: 'wdth' 100, 'wght' 200, 'ital' 0;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+      }
+      .anchord__button:hover {
+        transform: initial;
+        clip-path: none;
+      }
     }
 
-    .list__item:hover {
+    .list__item:active {
       background-color: var(--gray-200);
       transition-duration: 1s;
 
